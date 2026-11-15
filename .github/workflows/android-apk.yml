@@ -29,7 +29,7 @@ jobs:
       - name: Construire et synchroniser Android
         run: npm run android:sync
       - name: Installer le SDK Android
-        run: sdkmanager "platforms;android-35" "build-tools;35.0.0"
+        run: '"${ANDROID_HOME}/cmdline-tools/latest/bin/sdkmanager" "platforms;android-35" "build-tools;35.0.0"'
       - name: Générer l'APK de test
         working-directory: android
         run: bash gradlew --no-daemon assembleDebug
