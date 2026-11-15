@@ -1,0 +1,15 @@
+node_modules/
+.npm-cache/
+*.tsbuildinfo
+dist/
+test-results/
+playwright-report/
+*.log
+android/.gradle/
+android/local.properties
+android/**/build/
+.env*
+
+artifacts/
+*.jks
+*.keystore
